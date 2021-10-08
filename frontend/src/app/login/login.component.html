@@ -1,0 +1,169 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+    <div class="container-fluid">
+        <div class="navbar-header" style="background-color: black; font-size: medium;">
+            <li class="navbar-brand"><b>Salon BEAUTY</b></li>
+        </div>
+        <ul class="nav navbar-nav" style="background-color: black; font-size: medium;">
+            <li><a href="index">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="facilities">Our Facilities</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" style="background-color: black; font-size: medium;">
+          
+            <li><a href="" class="active"><b>Login</b></a></li> 
+               
+              <li><a href="registration"><span class="glyphicon glyphicon-log-in"></span> Registration</a></li> 
+                          
+
+
+        </ul>
+        
+    </div>
+</nav>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="assets/images/main9.jpg" alt="Image">
+                <div class="carousel-caption">        
+                </div>      
+            </div>
+
+            <div class="item">
+                <img src="assets/images/main12.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>      
+            </div>
+
+            <div class="item">
+                <img src="assets/images/main6.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="assets/images/main2.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div> 
+            </div>
+
+            <div class="item">
+                <img src="assets/images/main5.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div> 
+            </div>
+
+            <div class="item">
+                <img src="assets/images/main3.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div> 
+            </div>
+
+
+            <div class="item">
+                <img src="assets/images/main7.jpg" alt="Image">
+                <div class="carousel-caption">
+                </div> 
+            </div>
+
+
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-6">              
+            <div id="login"  class="login">
+                <h1>Login Here</h1>
+                <form #loginform="ngForm" (ngSubmit)="loginUser()" style="font-size: 20px;"><br>
+                    
+                    <small class="text-danger">{{msg}}</small>
+                    <p>
+                        <label for="">E mail : </label>
+                        <input type="text" name = "email" placeholder="Enter Your E mail" [(ngModel)]="user.email" required #email="ngModel"
+                        [class.is-invalid]="email.invalid && email.touched"
+                        >
+                        <!--<small class="text-danger" [calss.d-none]="email.valid || email.untouched"> Email is required.</small>-->
+                    </p>
+
+                    <p>
+                        <label for="">Password :</label>
+                        <input type="password" name = "password" placeholder="Enter Your Password" [(ngModel)]="user.password" >
+                    </p> 
+
+                    <p>
+                        <button class="button" type="submit">login</button>  <a (click)="goregistration()">Create a New Account</a>
+
+                    </p>
+                        
+                   
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="details"><div class="data" style="font-size: 20px;">
+                    <h2><br>Facilities</h2>         
+                    <ul>
+                        <li>Hair Cutting</li>
+                        <li>Bridal Dressing</li>
+                        <li>Facial Services</li>
+                        <li>Wedding Booking</li>
+                        
+                    </ul>
+                </div></div>
+        </div>
+
+    </div>
+    <hr>
+
+    <footer class="container-fluid" style="font-size: 20px;">
+
+        <div class="foot1 col-sm-4"> <div class="col-sm-2"><br></div>
+            <div class="col-sm-10 text-center">Connect with us<br><br><img src="assets/images/others.png">  </div> 
+        </div>
+
+        <div class="foot2 col-sm-3"> 
+            salon Beauty Salon (Pvt) Ltd,<br>
+            295/1,<br>
+            Passara Road,<br>
+            Badulla,<br>
+            Sri Lanka.<br> 
+        </div>
+
+        <div class="foot3 col-sm-4"> 
+            Hotline : +94 55 4558726 <img src="assets/images/viber.png">&nbsp;<img src="assets/images/whatsapp.png"><br> 
+            <br>Telephone     : +94 71 8541297 <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;+94 71 47582146 <br>                             
+            <br>e-mail   : yalashisalon@gmail.com<br>                          
+        </div>
+
+        <div class="text-center"></div>
+    </footer>  
+
