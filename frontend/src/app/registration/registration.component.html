@@ -1,0 +1,176 @@
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: black;">
+    <div class="container-fluid">
+        <div class="navbar-header" style="background-color: black; font-size: medium;">
+            <li class="navbar-brand"><h2><b>Salon BEAUTY</b></h2></li>
+        </div>
+        <ul class="nav navbar-nav" style="background-color: black; font-size: medium;">
+            <li><a href="index">Home</a></li>
+            <!--      <li><a href="about">About Us</a></li> -->
+            <li><a href="facilities">Our Facilities</a></li>
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right" style="background-color: black; font-size: medium;">
+          
+              <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> 
+               
+              <li><a href="" class="active"><span class="glyphicon glyphicon-log-in"></span><b>Registration</b></a></li> 
+                          
+
+
+        </ul>
+        
+    </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="assets/images/main10.jpg" alt="Image">
+            <div class="carousel-caption">        
+            </div>      
+        </div>
+
+        <div class="item">
+            <img src="assets/images/main2.jpg" alt="Image">
+            <div class="carousel-caption">
+            </div>      
+        </div>
+
+        <div class="item">
+            <img src="assets/images/main4.jpg" alt="Image">
+            <div class="carousel-caption">
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="assets/images/main8.jpg" alt="Image">
+            <div class="carousel-caption">
+            </div> 
+        </div>
+
+        <div class="item">
+            <img src="assets/images/main9.jpg" alt="Image">
+            <div class="carousel-caption">
+            </div> 
+        </div>
+
+        <div class="item">
+            <img src="assets/images/main6.jpg" alt="Image">
+            <div class="carousel-caption">
+            </div> 
+        </div>
+
+
+        <div class="item">
+            <img src="assets/images/main7.jpg" alt="Image">
+            <div class="carousel-caption">
+            </div> 
+        </div>
+
+
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+        <div class="container" style="text-align: center; font-size: medium;">        
+        <div id="reg"  class="reg">
+            <h1><b>Register Here</b></h1>
+            <form #Registerform="ngForm" (ngSubmit)="register()">
+                <small class="text-danger">{{msg}}</small>
+                <p>
+                    <label for="">Name:</label>
+                    <input type="text" name="name" placeholder="Enter Your Name" [(ngModel)]="user.name" #username="ngModel" required>
+                </p>
+
+                <p>
+                    <label for="">Address:</label>
+                    <input type="text" name="address" placeholder="Enter Address" [(ngModel)]="user.address" #address="ngModel" required>
+                </p>
+
+                <p>
+                    <label for="">Telephone:</label>
+                    <input type="tel" name="tpno" placeholder="Enter Phone Number" [(ngModel)]="user.tpno" #tpno="ngModel" required>
+                </p>
+
+                <p>
+                    <label for="">Email:</label>
+                    <input type="email" name="email" placeholder="Enter e-mail Address" [(ngModel)]="user.email" #email="ngModel" required>
+                </p>
+
+
+                <p>
+                    <label for="">NIC No:</label>
+                    <input type="text" name="nic" placeholder="Enter Your NIC No" [(ngModel)]="user.nic" #nic="ngModel" required>
+                </p>
+
+                <p>
+                    <label for="">Password :</label>
+                    <input type="password" name="password" placeholder="Enter Your Password" [(ngModel)]="user.password" #password="ngModel" required>
+                </p> 
+                <p>
+                    <label for="">Confirm Password :</label>
+                    <input type="password" name="repassword" placeholder="Retype Password" [(ngModel)]="user.repassword" #repassword="ngModel" required>
+                </p> 
+
+                
+                <br>
+                <p><button class="button btn-bg" type="submit" style="width: fit-content;">Registration</button><a (click)="gologin()">Back to login</a> </p> 
+               
+               <p>
+
+                <!--<input class="button" type="submit" name="register" value="Register">--> 
+             </p>
+            </form>
+<br>
+        </div>
+    </div>
+
+    
+<footer class="container-fluid">
+
+    <div class="foot1 col-sm-4"> <!--<div class="col-sm-2"><br>
+       <img src="assets/images/logo.png"></div> -->
+        <div class="col-sm-10 text-center">Connect with us<br><br><img src="assets/images/others.png">  </div> 
+    </div>
+
+    <div class="foot2 col-sm-3"> 
+        Salon Beauty Salon (Pvt) Ltd,<br>
+        295/1,<br>
+        Passara Road,<br>
+        Badulla,<br>
+        Sri Lanka.<br> 
+    </div>
+
+    <div class="foot3 col-sm-4"> 
+        Hotline : +94 55 4558726 <img src="assets/images/viber.png">&nbsp;<img src="assets/images/whatsapp.png"><br> 
+        <br>Telephone     : +94 71 8541297 <br>
+        &emsp;&emsp;&emsp;&emsp;&emsp;&ensp;+94 71 47582146 <br>                             
+        <br>e-mail   : yalashisalon@gmail.com<br>                       
+    </div>
+
+    <div class="text-center"></div>
+</footer>  
